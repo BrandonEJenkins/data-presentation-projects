@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Calculate Two Numbers</title>
+</head>
+<body>
+  
+  <div class="calculator-container">
+
+
+    <div class="result-container">
+      <h4>Result</h4>
+      <p class="result" id="result-output"></p>
+      <!-- <input type="text" id="result"> -->
+
+      <div class="calc-summary">
+        <span class="summary-span">
+          <small id="summary-num1" class="summary"></small>
+        </span>
+        <span class="summary-span">
+          <small id="summary-num2" class="summary"></small>
+        </span>
+        <span class="summary-span">
+          <small id="summary-operation" class="summary">Operation</small>
+        </span>
+      </div>
+    </div>
+
+    <div class="inputs-container">
+
+      <div class="operator-select">
+        <select id="operators">
+          <optgroup>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="x">x</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="number-inputs">
+        <input id="number-one" type="text" class="number-one" placeholder="First Number">
+        <input id="number-two" type="text" class="number-two" placeholder="Second Number">
+        
+      </div>
+      
+    </div>
+    
+    <button id="calculate" type="submit">=</button>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
